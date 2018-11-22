@@ -19,7 +19,7 @@ public class ConcreteHandlerA extends Handler {
     }
 
     // 具体的处理逻辑
-    public Response handle(Request request) {
+    public Response process(Request request) {
 
         System.out.println("Concrete Handler A handle the request : " + request.toString());
 

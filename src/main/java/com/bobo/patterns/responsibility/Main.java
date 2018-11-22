@@ -9,7 +9,7 @@ public class Main {
 
         Handler ha = new ConcreteHandlerA(hb, new Level(1));
 
-        Request request = new Request(new Level(3), "Request with Level 2 ...");
+        Request request = new Request(new Level(2), "Request with Level 2 ...");
 
         Response response = ha.handleRequest(request);
 

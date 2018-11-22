@@ -27,7 +27,7 @@ public abstract class Handler {
     }
 
     // 具体处理的业务逻辑
-    public abstract Response handle(Request request);
+    public abstract Response process(Request request);
 
     // 判断请求自身能否处理，如果不能，则将请求传递到下一个处理者
     // 模版方法
@@ -39,7 +39,7 @@ public abstract class Handler {
         if (getHandleLevel().equals(request.getLevel())) {
 
             // 具体处理
-            response = handle(request);
+            response = process(request);
 
         } else {
 
